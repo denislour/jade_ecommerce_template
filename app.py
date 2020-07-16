@@ -17,6 +17,8 @@ def inject_page():
         socials=data.socials,
         footerMenuLeft=data.footerMenuLeft,
         footerMenuRight=data.footerMenuRight,
+        categories=data.categories,
+        products=data.products,
     )
 
 
