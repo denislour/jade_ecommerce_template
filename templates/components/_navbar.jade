@@ -1,3 +1,6 @@
+{% from 'mixins/_icon.jade' import icon %}
+{% from 'mixins/_link_to_all.jade' import link_to_all %}
+
 div.uk-navbar-container.tm-navbar-container(uk-sticky="cls-active: tm-navbar-container-fixed")
   div.uk-container(uk-navbar)
 
@@ -19,7 +22,7 @@ div.uk-navbar-container.tm-navbar-container(uk-sticky="cls-active: tm-navbar-con
             li
               a(href= item.href)= item.name
                 if item.items
-                    span(uk-icon="icon:chevron-down; ratio: .75;")
+                    mixin icon('chevron-down', '.75')
               if item.items
                 div(class="uk-navbar-dropdown uk-margin-remove uk-padding-remove-vertical" 
                   uk-drop="pos: bottom-justify;
@@ -58,9 +61,10 @@ div.uk-navbar-container.tm-navbar-container(uk-sticky="cls-active: tm-navbar-con
                                 figure.tm-media-box-wrap
                                   img(src= brand.image alt= brand.name)
                       div.uk-text-center.uk-margin
-                        a.uk-link-muted.uk-text-uppercase.tm-link-to-all(href= item.href)
-                          span= 'See all brands'
-                          span(uk-icon="icon:chevron-down; ratio: .75;")
+                        mixin link_to_all('See all brands', item.href)
+                        //- a.uk-link-muted.uk-text-uppercase.tm-link-to-all(href= item.href)
+                        //-   span= 'See all brands'
+                        //-   span(uk-icon="icon:chevron-down; ratio: .75;")
 
                   if item.name == "Pages"
                     div.uk-container.uk-container-small.uk-margin-top.uk-margin-bottom

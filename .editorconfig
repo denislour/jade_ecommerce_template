@@ -1,0 +1,8 @@
+[*]
+indent_style = space
+
+[*.{js,ts,json,jade}]
+indent_size = 2
+
+[*.python]
+indent_size = 4
