@@ -44,6 +44,8 @@ $ cd jade_ecommerce_template
 $ python app.py
 ```
 
-## License
+## To do
 
-This software is licensed under the MIT License © [Jake V](https://github.com/denislour)
+- Re structured this project
+- Make automation build (less)
+- Create new cli run server
