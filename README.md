@@ -31,6 +31,12 @@ To clone and run this project, you'll need [Git](https://git-scm.com) and [Flask
 # Clone this repository
 $ git clone https://github.com/denislour/jade_ecommerce_template.git
 
+# Install lessc
+$ npm install -g lessc
+
+# Less build
+$ lessc jade_ecommerce_template/static/styles/less/style.less jade_ecommerce_template/static/styles.css
+
 # Go into the repository
 $ cd jade_ecommerce_template 
 
