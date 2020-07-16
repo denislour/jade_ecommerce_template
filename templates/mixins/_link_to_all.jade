@@ -1,5 +1,5 @@
 {% from 'mixins/_icon.jade' import icon %}
-mixin link_to_all(text, href)
-  a.uk-link-muted.uk-text-uppercase.tm-link-to-all(href=href)
+mixin link_to_all(text, href, class)
+  a.uk-link-muted.uk-text-uppercase.tm-link-to-all(class=class, href=href)
     span=text
     mixin icon("chevron-right", ".75")

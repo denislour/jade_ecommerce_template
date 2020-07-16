@@ -4,7 +4,7 @@ class data:
         'phone': '8 800 799 99 99',
         'email': 'example@example.com',
         'address': 'St.&nbsp;Petersburg, Nevsky&nbsp;Prospect&nbsp;28',
-        'openingHours': 'Daily 10:00\xe2\x80\x9322:00',
+        'openingHours': 'Daily 10:00-22:00',
         'storeName': 'Store Name',
         'latitude': 59.9356728,
         'longitude': 30.3258604,

@@ -1,0 +1,46 @@
+{% from 'mixins/_icon.jade' import icon %}
+{% from 'mixins/_link_to_all.jade' import link_to_all %}
+div(class="uk-navbar-container uk-light uk-visible@m tm-toolbar-container")
+  div.uk-container(uk-navbar)
+    div.uk-navbar-left
+      nav
+        ul.uk-navbar-nav
+
+          //- Phone
+          li
+            a(href="#")
+              mixin icon("receiver", ".75", "uk-margin-xsmall-right")
+              span.tm-pseudo= shopInfo.phone
+
+          //- Address
+          li
+            a(href="contacts.html" onclick="return false")
+              mixin icon("location", ".75", "uk-margin-xsmall-right")
+              span.tm-pseudo Store in St. Petersburg
+              mixin icon("triangle-down", ".75")
+            div.uk-margin-remove(uk-drop="mode: click; pos: bottom-center;")
+              div(class="uk-card uk-card-default uk-card-small uk-box-shadow-xlarge uk-overflow-hidden 
+              uk-padding-small uk-padding-remove-horizontal uk-padding-remove-bottom")
+                figure.uk-card-media-top.uk-height-small.js-map(
+                  data-latitude= shopInfo.latitude
+                  data-longitude= shopInfo.longitude
+                  data-zoom="14")
+                div.uk-card-body
+                  div.uk-text-small
+                    div.uk-text-bolder= shopInfo.storeName
+                    div!= shopInfo.address
+                    div= shopInfo.openingHours
+                  div.uk-margin-small
+                    mixin link_to_all("contacts", "contacts.html", "uk-link-reset")
+
+          //- Opening hours
+          li
+            div.uk-navbar-item
+              mixin icon("clock", ".75", "uk-margin-xsmall-right")
+              | #{shopInfo.openingHours}
+
+    div.uk-navbar-right
+      nav
+        ul.uk-navbar-nav
+          for item in toolbarMenu
+            li: a(href= item.href)= item.name
