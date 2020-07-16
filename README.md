@@ -1,6 +1,10 @@
 # Jade E-commerce Template
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/denislour/jade_ecommerce_template/blob/master/LICENSE)
 
 Responsive e-commerce template containing catalog, filters, product page, shopping cart and other elements of the online store. Built with [UIkit](https://getuikit.com).
+
+
+[![Computer store e-commerce template](https://raw.githubusercontent.com/denislour/jade_ecommerce_template/master/static/images/preview.png "Computer store e-commerce template")](https://raw.githubusercontent.com/denislour/jade_ecommerce_template/master/static/images/preview.png  "Computer store e-commerce template")
 
 ## Overview
 
