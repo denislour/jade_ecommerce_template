@@ -19,6 +19,7 @@ def inject_page():
         footerMenuRight=data.footerMenuRight,
         categories=data.categories,
         products=data.products,
+        brands=data.brands,
     )
 
 
