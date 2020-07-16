@@ -28,13 +28,11 @@ To clone and run this project, you'll need [Git](https://git-scm.com) and [Flask
 $ git clone https://github.com/denislour/jade_ecommerce_template.git
 
 # Go into the repository
-$ cd uikit-ecommerce-template
+$ cd jade_ecommerce_template 
 
 # Install dependencies
-$ npm install
-
-# Start
-$ gulp
+$ python app.py
+```
 
 ## License
 
