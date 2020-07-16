@@ -1,7 +1,8 @@
 {% from 'mixins/_icon.jade' import icon %}
+
 html
 
-  - var page = 'Pug Template'
+  block vars
 
   head
     include /partials/_head
@@ -11,7 +12,6 @@ html
     script(src="https://cdn.jsdelivr.net/npm/uikit@3.5.5/dist/js/uikit-icons.min.js")
 
   body
-    mixin icon('heart', '2.5')
     div.uk-offcanvas-content
       block index
 
