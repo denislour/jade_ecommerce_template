@@ -47,5 +47,5 @@ $ python app.py
 ## To do
 
 - Re structured this project
-- Make automation build (less)
+- Make automation build (less, inject page)
 - Create new cli run server

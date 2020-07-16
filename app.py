@@ -14,6 +14,9 @@ def inject_page():
         navbarMenu=data.navbarMenu,
         shopInfo=data.shopInfo,
         toolbarMenu=data.toolbarMenu,
+        socials=data.socials,
+        footerMenuLeft=data.footerMenuLeft,
+        footerMenuRight=data.footerMenuRight,
     )
 
 

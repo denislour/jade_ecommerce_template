@@ -1,0 +1,19 @@
+{% from 'mixins/_icon.jade' import icon %}
+html
+
+  - var page = 'Pug Template'
+
+  head
+    include /partials/_head
+    link(rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,500")
+    link(rel="stylesheet" href="/static/styles/style.css")
+    script(src="https://cdn.jsdelivr.net/npm/uikit@3.5.5/dist/js/uikit.min.js")
+    script(src="https://cdn.jsdelivr.net/npm/uikit@3.5.5/dist/js/uikit-icons.min.js")
+
+  body
+    mixin icon('heart', '2.5')
+    div.uk-offcanvas-content
+      block index
+
+    script(src="/static/scripts/script.js")
+    script(src="https://maps.googleapis.com/maps/js?key=AIzaSyClyjCemJi4m2q78gNeGkhlckpdH1hzTYA&callback=initMap", async, defer)

@@ -2,4 +2,4 @@ mixin icon(name, ratio, class)
   if ratio
     span(class=class, uk-icon="icon: {{ name }}; ratio: {{ ratio }};")
   else
-    span(uk-icon= name)
+    span(class=class, uk-icon= name)
