@@ -20,6 +20,8 @@ def inject_page():
         categories=data.categories,
         products=data.products,
         brands=data.brands,
+        articles=data.articles,
+        news=data.news
     )
 
 
