@@ -25,6 +25,10 @@ def inject_page():
     )
 
 
+@app.errorhandler(404)
+def page_not_found(error):
+    return render_template('pages/404.jade'), 404
+
 @app.route('/')
 def index():
     return render_template('pages/index.jade')
