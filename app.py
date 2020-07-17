@@ -40,5 +40,10 @@ def about():
     return render_template('pages/about.jade')
 
 
+@app.route('/article')
+def article():
+    return render_template('pages/article.jade')
+
+
 if __name__ == '__main__':
     app.run(debug=True)

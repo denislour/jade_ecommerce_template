@@ -756,14 +756,14 @@ class data:
             ,
         'preview': 'static/images/articles/macbook-photo.jpg',
         'date': 'May 21, 2018',
-        'href': 'article.html',
+        'href': '/article',
         }, {
         'title': 'Apple introduces macOS Mojave',
         'description': '<p>Praesent consequat justo eu massa malesuada posuere. Donec ultricies tincidunt nisl, sed euismod nulla venenatis maximus. Maecenas sit amet semper tellus. Pellentesque imperdiet finibus sapien, a consectetur eros auctor a.</p>'
             ,
         'preview': 'static/images/articles/macos.jpg',
         'date': 'May 21, 2018',
-        'href': 'article.html',
+        'href': '/article',
         }]
 
     news = [{
