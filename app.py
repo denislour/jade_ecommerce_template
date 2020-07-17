@@ -21,7 +21,7 @@ def inject_page():
         products=data.products,
         brands=data.brands,
         articles=data.articles,
-        news=data.news
+        news=data.news,
     )
 
 
@@ -29,9 +29,15 @@ def inject_page():
 def page_not_found(error):
     return render_template('pages/404.jade'), 404
 
+
 @app.route('/')
 def index():
     return render_template('pages/index.jade')
+
+
+@app.route('/about')
+def about():
+    return render_template('pages/about.jade')
 
 
 if __name__ == '__main__':
