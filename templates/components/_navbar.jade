@@ -1,4 +1,4 @@
-{% from 'mixins/_icon.jade' import icon %}
+{% from 'mixins/_icon.jade' import icon_ %}
 {% from 'mixins/_link_to_all.jade' import link_to_all %}
 
 div.uk-navbar-container.tm-navbar-container(uk-sticky="cls-active: tm-navbar-container-fixed")
@@ -22,7 +22,7 @@ div.uk-navbar-container.tm-navbar-container(uk-sticky="cls-active: tm-navbar-con
             li
               a(href= item.href)= item.name
                 if item.items
-                    mixin icon('chevron-down', '.75')
+                    mixin icon_('chevron-down', '.75')
               if item.items
                 div(class="uk-navbar-dropdown uk-margin-remove uk-padding-remove-vertical" 
                   uk-drop="pos: bottom-justify;

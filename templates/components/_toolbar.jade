@@ -1,4 +1,4 @@
-{% from 'mixins/_icon.jade' import icon %}
+{% from 'mixins/_icon.jade' import icon_ %}
 {% from 'mixins/_link_to_all.jade' import link_to_all %}
 div(class="uk-navbar-container uk-light uk-visible@m tm-toolbar-container")
   div.uk-container(uk-navbar)
@@ -9,15 +9,15 @@ div(class="uk-navbar-container uk-light uk-visible@m tm-toolbar-container")
           //- Phone
           li
             a(href="#")
-              mixin icon("receiver", ".75", "uk-margin-xsmall-right")
+              mixin icon_("receiver", ".75", "uk-margin-xsmall-right")
               span.tm-pseudo= shopInfo.phone
 
           //- Address
           li
             a(href="contacts.html" onclick="return false")
-              mixin icon("location", ".75", "uk-margin-xsmall-right")
+              mixin icon_("location", ".75", "uk-margin-xsmall-right")
               span.tm-pseudo Store in St. Petersburg
-              mixin icon("triangle-down", ".75")
+              mixin icon_("triangle-down", ".75")
             div.uk-margin-remove(uk-drop="mode: click; pos: bottom-center;")
               div(class="uk-card uk-card-default uk-card-small uk-box-shadow-xlarge uk-overflow-hidden 
               uk-padding-small uk-padding-remove-horizontal uk-padding-remove-bottom")
@@ -36,7 +36,7 @@ div(class="uk-navbar-container uk-light uk-visible@m tm-toolbar-container")
           //- Opening hours
           li
             div.uk-navbar-item
-              mixin icon("clock", ".75", "uk-margin-xsmall-right")
+              mixin icon_("clock", ".75", "uk-margin-xsmall-right")
               | #{shopInfo.openingHours}
 
     div.uk-navbar-right

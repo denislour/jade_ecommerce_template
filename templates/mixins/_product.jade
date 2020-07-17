@@ -1,4 +1,4 @@
-{% from 'mixins/_icon.jade' import icon %}
+{% from 'mixins/_icon.jade' import icon_ %}
 mixin product_(product)
 
   article.tm-product-card
@@ -25,7 +25,7 @@ mixin product_(product)
             if product.image
               img(src= product.image.medium, alt= product.name)
             else
-              mixin icon("image", "3", "uk-text-muted")
+              mixin icon_("image", "3", "uk-text-muted")
 
     //- Body
     div.tm-product-card-body
@@ -68,18 +68,18 @@ mixin product_(product)
             a.tm-product-card-action.js-add-to.js-add-to-favorites(
               class= { "tm-action-button-active js-added-to": product.isAddedToFavorites }
               title="Add to favorites")
-              mixin icon("heart", ".75")
+              mixin icon_("heart", ".75")
               span.tm-product-card-action-text Add to favorites
 
             //- Compare
             a.tm-product-card-action.js-add-to.js-add-to-compare(
               class= { "tm-action-button-active js-added-to": product.isAddedToCompare }
               title="Add to compare")
-              mixin icon("copy", ".75")
+              mixin icon_("copy", ".75")
               span.tm-product-card-action-text Add to compare
 
           //- Add to cart
           if not product.isNotAvailable
             button.uk-button.uk-button-primary.tm-product-card-add-button.tm-shine.js-add-to-cart
-              mixin icon("cart", "tm-product-card-add-button-icon")
+              mixin icon_("cart", "tm-product-card-add-button-icon")
               span.tm-product-card-add-button-text add to cart

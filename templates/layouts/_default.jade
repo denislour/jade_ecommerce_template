@@ -1,4 +1,4 @@
-{% from 'mixins/_icon.jade' import icon %}
+{% from 'mixins/_icon.jade' import icon_ %}
 extends layouts/_index
 
 block vars
@@ -21,7 +21,7 @@ block index
               li
                 div(class="uk-grid-small uk-flex-center uk-flex-left@s" uk-grid)
                   div
-                    mixin icon(advantage.icon, "2.5")
+                    mixin icon_(advantage.icon, "2.5")
                   div(class="uk-text-center uk-text-left@s uk-width-expand@s")
                     div= advantage.title
                     div.uk-text-meta= advantage.description
