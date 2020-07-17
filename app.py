@@ -45,5 +45,11 @@ def article():
     return render_template('pages/article.jade')
 
 
+@app.route('/cart')
+def cart():
+    return render_template('pages/cart.jade')
+
+
+
 if __name__ == '__main__':
     app.run(debug=True)
